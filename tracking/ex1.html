@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/ui-lightness/jquery-ui-1.10.4.custom.min.css">
+        <script type="text/javascript" src="jquery/jquery-1.10.2.js"></script>
+        <script type="text/javascript" src="jquery/jquery-ui-1.10.4.custom.min.js"></script>
+        
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src="mathutils.js"></script>
+        <script type="text/javascript" src="ex1.js"></script>
+    </head>
+    <body>
+        
+        <div id="wrapper">
+            <div id="canvas">
+                <canvas id="ex1-canv" width="800" height="500"></canvas> 
+            </div>
+            <div id="controls">
+                <p>
+                    <label for="nparticles">Number of Particles: </label>
+                    <input type="text" id="nparticles" value="250" style="border:0; color:#f6931f; font-weight.bold;">
+                </p>
+                <div id="nparticles-slider"></div>
+                
+                <p>
+                    <label for="stdpos">Standard deviation of position: </label>
+                    <input type="text" id="stdpos" value="5" style="border:0; color:#f6931f; font-weight.bold;">
+                </p>
+                <div id="stdpos-slider"></div>
+                
+                <p>
+                    <label for="stdvel">Standard deviation of velocity: </label>
+                    <input type="text" id="stdvel" value="10" style="border:0; color:#f6931f; font-weight.bold;">
+                </p>
+                <div id="stdvel-slider"></div>
+                
+                <p>
+                    <span>Update Matrix: </span><span id ="ex1-updatematrix">[[1, 0, 1, 0],[0, 1, 0, 1],[0, 0, 1, 0],[0, 0, 0, 1]]</span>
+                    <!-- <label for="ex1-updatematrix" >
+                        Update Matrix <input type="text" id="ex1-updatematrx" value="[[1, 0, 1, 0],[0, 1, 0, 1],[0, 0, 1, 0],[0, 0, 0, 1]]">
+                    </label>
+                    -->
+                </p>
+                <p>
+                    <span>Likelihood: </span><span id ="ex1-likelihood">exp(-norm2([p.x, p.y],[mouse.x, mouse.y]))</span>
+                    <!-- <label for="ex1-likelihood" >
+                        Likelihood Function <input type="text" id="ex1-likelihood" value="-">
+                    </label>
+                    -->
+                </p>
+                <p>
+                    <span>Mean Weight: </span><span id ="ex1-mean"></span>
+                </p>
+                <p>
+                    <span>FPS: </span><span id ="ex1-fps"></span>
+                </p>
+                <p>
+                    <input type="submit" onclick="EX1.updateParameters()" value="Update">
+                </p>
+            </div>
+        </div>
+        
+        
+    </body>
+</html>

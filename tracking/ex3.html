@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--<link rel="stylesheet" href="css/ui-lightness/jquery-ui-1.10.4.custom.min.css">-->
+        <script type="text/javascript" src="jquery-1.3.2.min.js"></script>
+        <!--<script type="text/javascript" src="jquery/jquery-ui-1.10.4.custom.min.js"></script>-->
+        
+        <script src="pixastic.core.js"></script>
+        <script src="pixastic.jquery.js"></script>
+        <script src="histogram.js"></script>
+        <script src="colorhistogram.js"></script>
+        
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src="mathutils.js"></script>
+        <script type="text/javascript" src="ex3.js"></script>
+        
+    </head>
+    <body>
+        
+        <div>
+          <img id="testimg2" src="jump.jpg" onload="colorhist()">
+          <canvas id="colorhistcanvas" width="255" height="300"></canvas>
+        </div>
+        <div>
+          <div style="margin-right: 5px; float:left;">
+            <img id="testimg" src="jump.jpg" onload="hist()">
+          </div>
+          <p>Average:<br>
+          <canvas id="avghistcanvas" width="255" height="100"></canvas><br>
+          <p>Weighted Average:<br>
+          <canvas id="perhistcanvas" width="255" height="100"></canvas>
+        </div>
+        
+        
+    </body>
+</html>

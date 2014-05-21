@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <canvas id="ex1-canv" width="800" height="500"></canvas> 
+        <div id="ex1-controls">
+            <label for="ex1-boundingbox" >
+                BoundingBox Size <input type="text" id="ex1-boundingbox" value="50">
+                <input type="submit" value="Update" onclick="EX1.updateParameters()">
+            </label>
+            <label for="ex1-mean" >
+                Mean Weight <input type="text" id="ex1-mean">
+            </label>
+        </div>
+        <div id="ex1-stats">
+            <span>FPS: </span><span id ="ex1-fps"></span>
+            
+        </div>
+        <script type="text/javascript" src="ex1.js"></script>
+        <script type="text/javascript" src="mathutils.js"></script>
+        <script type="text/javascript" src="ex1.js"></script>
+    </body>
+</html>

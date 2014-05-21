@@ -1,0 +1,17 @@
+#wrapper {
+    width: 1200px;
+    height: 500px;
+    border: 1px solid black;
+    overflow: hidden; /* will contain if #canvas is longer than #controls */
+}
+#canvas {
+    height: 100%;
+    width: 800px;
+    float:left; /* add this */
+    border: 1px solid red;
+}
+#controls {
+    height: 100%;
+    border: 1px solid green;
+    overflow: hidden; /* if you don't want #controls to wrap below #canvas */
+}
